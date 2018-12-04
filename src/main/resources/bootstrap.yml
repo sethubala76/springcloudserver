@@ -1,0 +1,16 @@
+spring:
+  application.name: spring-cloud-config-server-db
+  output.ansi.enabled: always
+  cloud.config:
+    enabled: true
+    server:
+      git:
+        uri: https://github.com/sethubala76/spring-cloud-config-server-db.git
+        searchPaths: conf
+        timeout: 90
+      health:
+        repositories:
+          gnanamtesting:
+            lable: master
+            name: spring-cloud-config-server-db
+            profiles: default
