@@ -6,6 +6,7 @@ spring:
     server:
       git:
         uri: https://github.com/sethubala76/spring-cloud-config-server-db.git
+        skip-ssl-validation: true
         searchPaths: conf
         timeout: 90
       health:
